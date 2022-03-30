@@ -2,12 +2,10 @@ import {
   makeStyles,
   Box
 } from "@material-ui/core";
-
 import Line from "../component/line";
 import '../App.css';
 import clsx from 'clsx';
 import { HexGrid, Layout, Hexagon, Text, Pattern, Path, Hex, GridGenerator } from 'react-hexgrid';
-import logo from "../assets/images/email.png";
 
 ;
 
@@ -157,7 +155,7 @@ function Skills(props) {
       style={{ background: pageTheme.palette.background.default }}
       id="Skills" >
       <Line pageTheme={pageTheme} text="Skills"></Line>
-      <HexGrid width="100%" height="90%" viewBox="-50 -50 100 100" className="mt-1">
+      <HexGrid width="100%" height="50%" viewBox="-50 -25 100 55" className="mt-1">
         <Layout size={hexagonSize} flat={true} spacing={1.1} origin={{ x: 0, y: 0 }}>
           {SKILLS_LIST.map((item, index) => (
             <Hexagon q={item.q} r={item.r} s={item.s} className={clsx(item.class)} key={item.name} id="skill-badge">

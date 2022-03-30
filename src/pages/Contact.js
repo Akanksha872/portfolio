@@ -43,7 +43,7 @@ function Contact(props) {
         ))}
       </Box>
       <Box sx={{ justifyContent: 'center', display: 'flex', alignItems: 'center' }}>
-        <h5 style={{ color: pageTheme.palette.primary.main }} className="pt-1 pb-1">Designed & Built by Akanksha Singh</h5>
+        <h6 style={{ color: pageTheme.palette.primary.main }} className="pt-1 pb-1">Designed & Built by Akanksha Singh</h6>
       </Box>
 
     </Box>
