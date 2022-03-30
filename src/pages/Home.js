@@ -16,7 +16,7 @@ const height = pageHeight;
 
 const useStyles = makeStyles((theme) => ({
   fullHeight: {
-    height: height,
+    minHeight: height,
     paddingTop: '4rem'
   },
   helloImage: {

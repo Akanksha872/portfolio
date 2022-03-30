@@ -49,7 +49,7 @@ const ACHEIVEMENT_DATA_LIST = [
 
 const useStyles = makeStyles((theme) => ({
   fullHeight: {
-    height: height,
+    minHeight: height,
     paddingTop: '4rem'
   },
 }));
