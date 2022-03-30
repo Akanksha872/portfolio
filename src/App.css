@@ -22,7 +22,7 @@ h3 {
 }
 
 h4 {
-    font-size: 2vw;
+    font-size: 1.5vw;
     margin: 0;
 }
 
@@ -32,11 +32,17 @@ h5 {
 }
 
 h6 {
-    font-size: 0.5vw;
+    font-size: 0.8vw;
     margin: 0;
+}
+p{
+    font-size: 1vw;
 }
 .mt-1{
     margin-top: 2vw;
+}
+.mb-1{
+    margin-bottom: 2vw;
 }
 .mt-2{
     margin-top: 4%;

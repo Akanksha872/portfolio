@@ -82,13 +82,13 @@ const WORK_EXPERIENCE_LIST = [{
 }]
 
 const useStyles = makeStyles((theme) => ({
-  greyText:{
-    color:"#828282"
+  greyText: {
+    color: "#828282"
   },
-  card:{
+  card: {
     width: "60vw"
   },
-  journey:{
+  journey: {
     width: "25%"
   }
 }));
@@ -100,23 +100,23 @@ function WorkExperience(props) {
     <div style={{ background: pageTheme.palette.background.default }} id="WorkExperience">
       <Line pageTheme={pageTheme} text="Work Experience"></Line>
       <Box
-      className="workExperienceBox"
-        sx={{ justifyContent: 'center', display: 'flex', flexDirection: "column", alignItems: 'center', paddingTop: "6%" , paddingBottom: "8%" }}>
+        className="workExperienceBox"
+        sx={{ justifyContent: 'center', display: 'flex', flexDirection: "column", alignItems: 'center', paddingTop: "6%", paddingBottom: "8%" }}>
         {WORK_EXPERIENCE_LIST.map((item, index) => (
           <Box
-          key={index}
+            key={index}
             sx={{ justifyContent: 'center', display: 'flex', flexDirection: "row", alignItems: 'center', paddingTop: "2%" }}>
             <div className={classes.journey}>
               {
                 item.journey.map((journey, index) => (
 
                   <div className="p-1" key={index}>
-                    <Typography sx={{ fontSize: 12 }} >
+                    <h5>
                       <b>{journey.title}</b>
-                    </Typography>
-                    <Typography sx={{ fontSize: 12 }} className={classes.greyText}>
+                    </h5>
+                    <h6 className={classes.greyText}>
                       {journey.from}
-                    </Typography>
+                    </h6>
                   </div>
                 ))
               }
@@ -124,17 +124,17 @@ function WorkExperience(props) {
             <Card className={classes.card} >
               <CardContent>
 
-                <Typography sx={{ fontSize: 12 }}>
+                <h5 className="mb-1">
                   <b>{item.organization}</b>  ({item.duration})
-                </Typography>
+                </h5>
 
 
                 <img src={item.image} alt="loading" width={item.imageWidth} height={item.imageHeight} />
 
                 {item.description.map((para, index) => (
-                  <Typography sx={{ fontSize: 12 }} key={index}>
-                    {para}
-                  </Typography>
+                  <h6 key={index} className={classes.greyText}>
+                   - {para}
+                  </h6>
                 ))}
 
               </CardContent>

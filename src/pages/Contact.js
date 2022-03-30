@@ -37,9 +37,9 @@ function Contact(props) {
   return (
     <Box style={{ background: pageTheme.palette.background.default }} id="Contact">
       <Line pageTheme={pageTheme} text="Get in Touch" className="pb-2"></Line>
-      <Box sx={{ justifyContent: 'space-evenly', display: 'flex', alignItems: 'center', paddingTop: "3%",  paddingBottom: "2%" }} className="pt-2 pb-2">
+      <Box sx={{ justifyContent: 'space-evenly', display: 'flex', alignItems: 'center', paddingTop: "5%",  paddingBottom: "5%" }} className="pt-2 pb-2">
         {SOCIAL_MEDIA_LIST.map((item, index) => (
-          <a href={item.link} target="_blank" key={index}> <img src={item.image} alt="loading" width="50%"></img></a>
+          <a href={item.link} target="_blank" key={index}> <img src={item.image} alt="loading" width="40%"></img></a>
         ))}
       </Box>
       <Box sx={{ justifyContent: 'center', display: 'flex', alignItems: 'center' }}>

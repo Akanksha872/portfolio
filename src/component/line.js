@@ -6,10 +6,10 @@ import {
 
 const useStyles = makeStyles((theme) => ({
     line: {
-        borderRadius: '1rem',
+        borderRadius: '1vw',
         display: 'inline-block',
         width: '50%',
-        borderTop: '0.3rem solid'
+        borderTop: '0.3vw solid'
     }
 }));
 

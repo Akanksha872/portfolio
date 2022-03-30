@@ -28,7 +28,13 @@ const useStyles = makeStyles((theme) => ({
     width: "110%",
     marginTop: "5%"
   },
-}));
+  logoSize: {
+    width: '2vw',
+  },
+  imagePadding:{
+    paddingLeft: "30px"
+  }
+}));  
 
 function Projects(props) {
   const classes = useStyles();
@@ -52,8 +58,8 @@ function Projects(props) {
                 sx={{ justifyContent: 'space-evenly', display: 'flex', flexDirection: "column", alignItems: 'center' }} >
                 <p>{item.description}</p>
                 <div>
-                  <a href={item.githubLink} target="_blank" className="p-1"> <img src={githubLogo} alt="loading" /></a>
-                  <a href={item.webLink} target="_blank" className="p-1"> <img src={webLink} alt="loading" /></a>
+                  <a href={item.githubLink} target="_blank" className={classes.imagePadding}> <img src={githubLogo} alt="loading" className={classes.logoSize} /></a>
+                  <a href={item.webLink} target="_blank"className={classes.imagePadding} > <img src={webLink} alt="loading" className={classes.logoSize} /></a>
                 </div>
               </Box>
             </Box>

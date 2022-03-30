@@ -72,7 +72,6 @@ function Acheivement(props) {
               <h3 className={classes.contentText}>{item.title}</h3>
               {item.description.map((item, index) => (
                 <p className={classes.contentText} key={index}>{item}</p>
-
               ))}
             </div>
           </div>

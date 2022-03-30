@@ -55,7 +55,7 @@ function Home(props) {
           <h3 style={{ color: pageTheme.h3.color }} >
             Software Developer
         </h3>
-        <Button className={classes.downloadButton} onClick={saveFile}>See my Resume</Button>
+        <Button className={classes.downloadButton} onClick={saveFile}><h6>See my Resume</h6></Button>
 
         </Box>
         <img src={helloAnimation} alt="loading..." width="50%" />
