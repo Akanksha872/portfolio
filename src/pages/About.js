@@ -56,8 +56,7 @@ function About(props) {
           </p>
 
           <p className={classes.aboutText}>
-            Apart from tech, I love travelling, painting canvas, cooking delicious food, reading book ,
-            playing guitar  and singing to them.
+            Apart from tech, I love travelling, painting canvas, cooking delicious food, reading books.
          </p>
         </span>
       </Box>
