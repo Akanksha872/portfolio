@@ -35,14 +35,14 @@ function Header() {
   return (
     <AppBar position="sticky">
       <Box sx={{ justifyContent: 'space-evenly', display: 'flex', alignItems: 'center' }} className={classes.header}>
-          <a href="#Home" className={classes.link}>Home</a>
-          <a href="#About" className={classes.link}> About</a>
-          <a href="#WorkExperience" className={classes.link}>Work Experience </a>
-          <a href="#Skills" className={classes.link}>Skills</a>
-          <a href="#Projects" className={classes.link}> Projects</a>
-          <a href="#Acheivement" className={classes.link}> Acheivements</a>
-          <a href="#Contact" className={classes.link}>  Contact me</a>
-        </Box>
+        <a href="#Home" className={classes.link}><h5>Home</h5></a>
+        <a href="#About" className={classes.link}> <h5>About</h5></a>
+        <a href="#WorkExperience" className={classes.link}><h5>Work Experience</h5> </a>
+        <a href="#Skills" className={classes.link}><h5>Skills</h5></a>
+        <a href="#Projects" className={classes.link}> <h5>Projects</h5></a>
+        <a href="#Acheivement" className={classes.link}> <h5>Acheivements</h5></a>
+        <a href="#Contact" className={classes.link}>  <h5>Contact me</h5></a>
+      </Box>
     </AppBar>
   );
 }

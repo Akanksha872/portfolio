@@ -2,14 +2,14 @@ import {
   makeStyles,
   Box
 } from "@material-ui/core";
-import { pageHeight } from "../constant";
+
 import Line from "../component/line";
 import '../App.css';
 import clsx from 'clsx';
 import { HexGrid, Layout, Hexagon, Text, Pattern, Path, Hex, GridGenerator } from 'react-hexgrid';
 import logo from "../assets/images/email.png";
 
-const height = pageHeight;
+;
 
 const SKILLS_LIST = [
   {
@@ -129,10 +129,6 @@ const SKILLS_LIST = [
   }
 ]
 const useStyles = makeStyles((theme) => ({
-  fullHeight: {
-    minHeight: height,
-    paddingTop: '4rem'
-  },
   badge: {
     backgroundColor: '#FFFFFF',
     border: '6px solid #2F80ED',
@@ -155,10 +151,9 @@ const useStyles = makeStyles((theme) => ({
 function Skills(props) {
   const classes = useStyles();
   const pageTheme = props.pageTheme;
-  const hexagonSize = { x: 10, y: 10 };
+  const hexagonSize = { x: 5, y: 5 };
   return (
     <div
-      className={classes.fullHeight}
       style={{ background: pageTheme.palette.background.default }}
       id="Skills" >
       <Line pageTheme={pageTheme} text="Skills"></Line>

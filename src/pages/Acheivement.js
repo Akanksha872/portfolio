@@ -2,16 +2,14 @@ import {
   makeStyles,
   Box
 } from "@material-ui/core";
-import { pageHeight } from "../constant";
 import Line from "../component/line";
 import acheivementBG from "../assets/images/acheivementBG.jpeg";
 import acheivement1 from "../assets/images/acheivement1.jpeg";
 import acheivement2 from "../assets/images/acheivement2.jpeg";
 import acheivement3 from "../assets/images/acheivement3.jpeg";
-import AcheivementCard from "../component/acheivementCard";
 
 
-const height = pageHeight;
+;
 
 const ACHEIVEMENT_DATA_LIST = [
   {
@@ -48,10 +46,10 @@ const ACHEIVEMENT_DATA_LIST = [
 ]
 
 const useStyles = makeStyles((theme) => ({
-  fullHeight: {
-    minHeight: height,
-    paddingTop: '4rem'
-  },
+
+  contentText: {
+    color: "#FFFFFF",
+  }
 }));
 
 function Acheivement(props) {
@@ -59,13 +57,22 @@ function Acheivement(props) {
   const pageTheme = props.pageTheme;
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column', flexWrap: 'wrap', }}
-      className={classes.fullHeight} style={{ backgroundImage: `url(${acheivementBG})` }} id="Acheivement">
+      style={{ backgroundImage: `url(${acheivementBG})` }} id="Acheivement">
       <div><Line pageTheme={pageTheme} text="Acheivements"></Line></div>
-      <Box sx={{ justifyContent: 'space-around', display: 'flex', flexWrap: 'wrap', alignItems: 'center' }} className="pt-4" >
+      <Box sx={{ justifyContent: 'space-around', display: 'flex', flexWrap: 'wrap', alignItems: 'center', paddingTop: "7%", paddingBottom: "10%" }} className="pt-4" >
         {ACHEIVEMENT_DATA_LIST.map((item, index) => (
-          <AcheivementCard data={item} key={index}>
+          <div className="content" key={index}>
+            <div className="content-overlay"></div>
             <img src={item.image} alt="loading" width={item.imageWidth} height={item.imageHeight} />
-          </AcheivementCard>
+            <div className="content-details fadeIn-bottom">
+              <h3 className={classes.contentText}>{item.title}</h3>
+              {item.description.map((item, index) => (
+                <p className={classes.contentText} key={index}>{item}</p>
+
+              ))}
+            </div>
+          </div>
+
         ))}
       </Box>
     </Box>
@@ -73,3 +80,6 @@ function Acheivement(props) {
 }
 
 export default Acheivement;
+{/* <AcheivementCard data={item} key={index}>
+<img src={item.image} alt="loading" width={item.imageWidth} height={item.imageHeight} />
+</AcheivementCard> */}

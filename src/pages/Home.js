@@ -3,7 +3,7 @@ import {
   Box,
   Button
 } from "@material-ui/core";
-import { pageHeight } from "../constant";
+
 import helloAnimation from '../assets/gif/hello.gif';
 import helloLogo from "../assets/images/hello.svg";
 import '../App.css';
@@ -12,23 +12,19 @@ import { saveAs } from "file-saver";
 import resume from "../assets/pdf/resume.pdf"
 
 
-const height = pageHeight;
+;
 
 const useStyles = makeStyles((theme) => ({
-  fullHeight: {
-    minHeight: height,
-    paddingTop: '4rem'
-  },
   helloImage: {
-    marginLeft: "1rem",
-    marginRight: "1rem",
+    marginLeft: "1.5%",
+    marginRight: "1.5%",
   },
   downloadButton:{
     backgroundColor:"#2F80ED",
     color: "#FFFFFF",
     width: "max-content",
-    padding:"0.5rem",
-    marginTop: "2rem"
+    padding:"1%",
+    marginTop: "3%"
   }
 }));
 
@@ -44,8 +40,8 @@ function Home(props) {
   const classes = useStyles();
   const pageTheme = props.pageTheme;
   return (
-    <div className={classes.fullHeight} style={{ background: pageTheme.palette.background.default }} id="Home">
-      <Box sx={{ justifyContent: 'space-around', display: 'flex', flexWrap: 'wrap', alignItems: 'center' }}>
+    <div  style={{ background: pageTheme.palette.background.default }} id="Home">
+      <Box sx={{ justifyContent: 'space-around', display: 'flex', flexWrap: 'wrap', alignItems: 'center', paddingTop: "7%",  paddingBottom: "10%" }}>
         <Box sx={{ alignContent: 'flex-start', display: 'flex', flexDirection: 'column', }}>
           <h3 >
             Hi There, 
@@ -62,7 +58,7 @@ function Home(props) {
         <Button className={classes.downloadButton} onClick={saveFile}>See my Resume</Button>
 
         </Box>
-        <img src={helloAnimation} alt="loading..." />
+        <img src={helloAnimation} alt="loading..." width="50%" />
       </Box>
 
     </div>

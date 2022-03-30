@@ -6,7 +6,7 @@ import {
   LinearProgress,
   Box
 } from "@material-ui/core";
-import { pageHeight } from "../constant";
+
 import Line from "../component/line";
 import vmwareLogo from "../assets/images/vmware.png";
 import hashedinLogo from "../assets/images/hashedin1.jpeg";
@@ -14,7 +14,7 @@ import isroLogo from "../assets/images/isro.png";
 import '../App.css';
 
 
-const height = pageHeight;
+;
 
 const WORK_EXPERIENCE_LIST = [{
   title: "MEMBER OF TECHNICAL STAFF II",
@@ -22,8 +22,8 @@ const WORK_EXPERIENCE_LIST = [{
   duration: "1 Year",
   organization: "Vmware, Bangalore",
   image: vmwareLogo,
-  imageWidth: 200,
-  imageHeight: 200,
+  imageWidth: "40%",
+  imageHeight: "40%",
   journey: [{
     title: "MEMBER OF TECHNICAL STAFF II",
     from: "Apr, 2021 - Present",
@@ -40,8 +40,8 @@ const WORK_EXPERIENCE_LIST = [{
   duration: "1 year 9 months",
   organization: "Hashedin by Deloitte, Bangalore",
   image: hashedinLogo,
-  imageWidth: 200,
-  imageHeight: 200,
+  imageWidth: "40%",
+  imageHeight: "40%",
   journey: [{
     from: "Jan, 2021 - Mar, 2021",
     title: "SOFTWARE ENGINEER  II"
@@ -67,8 +67,8 @@ const WORK_EXPERIENCE_LIST = [{
   duration: "3 Months",
   organization: "Space Application Center, ISRO, Ahmedabad",
   image: isroLogo,
-  imageWidth: 200,
-  imageHeight: 200,
+  imageWidth: "40%",
+  imageHeight: "40%",
   journey: [
     {
       title: "SDE INTERN",
@@ -82,18 +82,14 @@ const WORK_EXPERIENCE_LIST = [{
 }]
 
 const useStyles = makeStyles((theme) => ({
-  fullHeight: {
-    minHeight: height,
-    paddingTop: '4rem'
-  },
   greyText:{
     color:"#828282"
   },
   card:{
-    width: "60rem"
+    width: "60vw"
   },
   journey:{
-    width: "25rem"
+    width: "25%"
   }
 }));
 
@@ -101,15 +97,15 @@ function WorkExperience(props) {
   const classes = useStyles();
   const pageTheme = props.pageTheme;
   return (
-    <div className={classes.fullHeight} style={{ background: pageTheme.palette.background.default }} id="WorkExperience">
+    <div style={{ background: pageTheme.palette.background.default }} id="WorkExperience">
       <Line pageTheme={pageTheme} text="Work Experience"></Line>
       <Box
       className="workExperienceBox"
-        sx={{ justifyContent: 'center', display: 'flex', flexDirection: "column", alignItems: 'center', paddingTop: "4rem" , paddingBottom: "6rem" }}>
+        sx={{ justifyContent: 'center', display: 'flex', flexDirection: "column", alignItems: 'center', paddingTop: "6%" , paddingBottom: "8%" }}>
         {WORK_EXPERIENCE_LIST.map((item, index) => (
           <Box
           key={index}
-            sx={{ justifyContent: 'center', display: 'flex', flexDirection: "row", alignItems: 'center', paddingTop: "2rem" }}>
+            sx={{ justifyContent: 'center', display: 'flex', flexDirection: "row", alignItems: 'center', paddingTop: "2%" }}>
             <div className={classes.journey}>
               {
                 item.journey.map((journey, index) => (

@@ -3,23 +3,19 @@ import {
   makeStyles,
   Box
 } from "@material-ui/core";
-import { pageHeight } from "../constant";
+
 import Line from "../component/line";
 import profile from "../assets/images/profile.png";
 import abouticon from "../assets/images/about.png";
 
-const height = pageHeight;
+;
 
 const useStyles = makeStyles((theme) => ({
-  fullHeight: {
-    minHeight: height,
-    paddingTop: '4rem'
-  },
   textWidth: {
     width: "50%"
   },
   aboutText: {
-    fontSize: "1.4rem"
+    fontSize: "1.5vw"
   },
   aboutHeight: {
     height: "80%"
@@ -30,12 +26,12 @@ function About(props) {
   const classes = useStyles();
   const pageTheme = props.pageTheme;
   return (
-    <div className={classes.fullHeight} style={{ background: pageTheme.palette.background.default }} id="About">
+    <div style={{ background: pageTheme.palette.background.default }} id="About">
       <Line pageTheme={pageTheme} text="About"></Line>
-      <Box sx={{ justifyContent: 'space-around', display: 'flex', flexWrap: 'wrap', alignItems: 'center' }}
+      <Box sx={{ justifyContent: 'space-around', display: 'flex', flexWrap: 'wrap', alignItems: 'center',paddingTop: "7%",  paddingBottom: "10%"  }}
         className={classes.aboutHeight}
         id="aboutBox">
-        <img src={abouticon} alt="loading" />
+        <img src={abouticon} alt="loading" width="10%"/>
         <img src={profile} alt="loading" width="20%" />
         <span style={{ color: props.pageTheme.palette.primary.main }} className={classes.textWidth}>
           <p className={classes.aboutText}>
