@@ -8,7 +8,7 @@ import {
 const useStyles = makeStyles((theme) => ({
   header: {
     backgroundColor: "#2F80ED",
-    height: '3rem'
+    height: '3vw'
   },
   logo: {
     flexGrow: "1",

@@ -15,7 +15,7 @@ const ACHEIVEMENT_DATA_LIST = [
   {
     title: "Winner Of Hashathon, 2019",
     image: acheivement1,
-    imageWidth: 550,
+    imageWidth: '500vw',
     description: [
       "Hashedin organized a Saas theme 24 hour hackathon named Hashathon. I participated with a team of 3 other people and won 20,000 cash prize.",
       "Project Idea: Develop an interface that will show the commands used in command lines and associate them with github commit and JIRA ID. A automated kind of documentation will be created that will show what commands have been used in any particular JIRA issues.",
@@ -49,6 +49,10 @@ const useStyles = makeStyles((theme) => ({
 
   contentText: {
     color: "#FFFFFF",
+  },
+  imageSize:{
+    width: "25vw",
+    height: "25vw"
   }
 }));
 
@@ -59,11 +63,11 @@ function Acheivement(props) {
     <Box sx={{ display: 'flex', flexDirection: 'column', flexWrap: 'wrap', }}
       style={{ backgroundImage: `url(${acheivementBG})` }} id="Acheivement">
       <div><Line pageTheme={pageTheme} text="Acheivements"></Line></div>
-      <Box sx={{ justifyContent: 'space-around', display: 'flex', flexWrap: 'wrap', alignItems: 'center', paddingTop: "7%", paddingBottom: "10%" }} className="pt-4" >
+      <Box sx={{ justifyContent: 'space-around', display: 'flex', flexWrap: 'wrap', alignItems: 'center', paddingTop: "7%", paddingBottom: "10%", marginLeft: "3%", marginRight: "3%" }} className="pt-4" >
         {ACHEIVEMENT_DATA_LIST.map((item, index) => (
           <div className="content" key={index}>
             <div className="content-overlay"></div>
-            <img src={item.image} alt="loading" width={item.imageWidth} height={item.imageHeight} />
+            <img src={item.image} alt="loading" className={classes.imageSize}/>
             <div className="content-details fadeIn-bottom">
               <h3 className={classes.contentText}>{item.title}</h3>
               {item.description.map((item, index) => (
@@ -80,6 +84,3 @@ function Acheivement(props) {
 }
 
 export default Acheivement;
-{/* <AcheivementCard data={item} key={index}>
-<img src={item.image} alt="loading" width={item.imageWidth} height={item.imageHeight} />
-</AcheivementCard> */}
