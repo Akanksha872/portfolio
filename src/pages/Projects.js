@@ -59,7 +59,7 @@ function Projects(props) {
                 <p>{item.description}</p>
                 <div>
                   <a href={item.githubLink} target="_blank" className={classes.imagePadding}> <img src={githubLogo} alt="loading" className={classes.logoSize} /></a>
-                  <a href={item.webLink} target="_blank"className={classes.imagePadding} > <img src={webLink} alt="loading" className={classes.logoSize} /></a>
+                  <a href={item.projectLink} target="_blank"className={classes.imagePadding} > <img src={webLink} alt="loading" className={classes.logoSize} /></a>
                 </div>
               </Box>
             </Box>
