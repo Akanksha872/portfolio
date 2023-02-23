@@ -29,10 +29,11 @@ const WORK_EXPERIENCE_LIST = [{
     from: "Apr, 2021 - Present",
   }],
   description: [
-    "Majorly contributed in building their kubernetes cluster requesting/managing interface in Angular. I was responsible for the UX design along with the UI implementation and UI test cases.",
-    "I worked on REST APIs  using Flask to implement  new APIs and implement OAuth in one of the backend application. ",
-    "Manage kubernetes clusters of the tenants when faced issues.",
-    "Tech - Angular, Clarity, Flask, Kubernetes, Docker, Figma"
+    "Developed platform that builds dynamically configurable plugins (guided-tour/ feedback/ announcement etc) which can be plugged into any web-based VMware product by including a JS plugin library file.",
+    "Worked on iframe and build JS library and APIs(Java) for the web-plugins.",
+    "Majorly contributed in building the kubernetes cluster requesting/managing interface in Angular. I was responsible for the UX design(Figma) along with the UI implementation(clarity library) and UI test cases.",
+    "I worked in back-end(Flask) to automate some tasks in kuberenetes cluster & implement OAuth and develop APIs.",
+    "Tech - Angular, Clarity, Flask, Java, Kubernetes, Docker, Figma"
   ]
 }, {
   title: "SOFTWARE ENGINEER  II",
