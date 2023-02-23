@@ -4,7 +4,7 @@ import {
 } from "@material-ui/core";
 
 import Line from "../component/line";
-import project1 from "../assets/images/project1.png";
+import project1 from "../assets/images/project2.png";
 import githubLogo from "../assets/images/githubLink.png";
 import webLink from "../assets/images/webLink.png";
 import '../App.css';
@@ -16,7 +16,7 @@ const PROJECT_LIST = [{
   projectLink: "https://marketplace.visualstudio.com/items?itemName=AkankshaSingh872.case-change",
   image: project1,
   imageWidth: "60%",
-  description: "A VS code extension that allows to convert case of the selected text. Available on Visual Studio Marketplace and having 4000+ installs."
+  description: "A VS code extension that allows to convert case of the selected text. Available on Visual Studio Marketplace and having 8000+ installs."
 
 }];
 const useStyles = makeStyles((theme) => ({
