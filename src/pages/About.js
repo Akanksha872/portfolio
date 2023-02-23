@@ -46,7 +46,7 @@ function About(props) {
 
           <p className={classes.aboutText}>
             Fast-forward to today, and I had the privilege of working in a start-up, a big MNC and space
-            organization with total work experience of 3 years. I'm happiest when I'm creating, learning, exploring
+            organization with total work experience of 4 years. I'm happiest when I'm creating, learning, exploring
             and thinking about how to make things better.
          </p>
 

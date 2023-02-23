@@ -19,7 +19,7 @@ import '../App.css';
 const WORK_EXPERIENCE_LIST = [{
   title: "MEMBER OF TECHNICAL STAFF II",
   from: "Apr, 2021 - Present",
-  duration: "1 Year",
+  duration: "2 Year",
   organization: "Vmware, Bangalore",
   image: vmwareLogo,
   imageWidth: "40%",
