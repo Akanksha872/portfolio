@@ -70,7 +70,15 @@ const SKILLS_LIST = [
     r: -2,
     s: 1,
     class: "lightBlue"
-  }, {
+  }, 
+  {
+    name: "Java",
+    q: 3,
+    r: -1, 
+    s: 2,
+    class: "blue",
+  },
+  {
     name: "Karma",
     q: 0,
     r: -1,
