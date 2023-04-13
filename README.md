@@ -1,1 +1,1 @@
-Checkout the portfolio : https://akankshasinghportfolio.herokuapp.com/
+Checkout the portfolio : https://akanksha-singh.in/
